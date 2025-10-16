@@ -1,20 +1,51 @@
-Laravel 8 full (skeleton) ready for installer
+#  Tugas 2 & 3 Laravel — Fremwork Laravel
 
-Steps to get running after extracting this zip into e.g. C:\xampp\htdocs\laravel8_full_task:
+Proyek ini merupakan hasil pengerjaan **Tugas 2 dan Tugas 3** mata kuliah **Pemrograman Web Lanjut**, menggunakan **Laravel Framework** sebagai backend utama.  
+Tujuan dari proyek ini adalah untuk memahami dasar pengembangan aplikasi berbasis **MVC (Model-View-Controller)**, penerapan **routing**, serta implementasi **database migration dan seeding** di Laravel.
 
-1. Open terminal in project folder (where composer.json is).
-2. Run: composer install
-   - This will download vendor and framework files.
-3. Copy .env.example to .env and set DB path to database/database.sqlite (default in .env.example)
-   - On Windows you can set DB_DATABASE=/absolute/path/to/database/database.sqlite or use relative.
-4. Generate app key:
-   php artisan key:generate
-5. Run migrations and seeders:
-   php artisan migrate --seed
-6. Serve app:
-   php artisan serve
-7. Open browser:
-   http://localhost:8000/books
-   http://localhost:8000/authors
+---
 
-If you prefer MySQL, edit .env to DB_CONNECTION=mysql and set DB credentials, then create empty database in phpMyAdmin before migrate.
+## 🛠️ Teknologi yang Digunakan
+- **Laravel Framework 5.x / 8.x**
+- **PHP 8.2**
+- **Composer**
+- **SQLite / MySQL Database**
+- **Bootstrap (Frontend)**
+- **Visual Studio Code**
+
+
+## Struktur Direktori Utama
+
+app/ → Logika utama aplikasi (Controller, Model, Middleware)
+bootstrap/ → Inisialisasi dan autoload Laravel
+config/ → File konfigurasi aplikasi
+database/ → File migration, seeder, dan database SQLite
+public/ → Folder publik (index.php)
+resources/ → Tampilan Blade dan aset frontend
+routes/ → File routing (web.php, api.php)
+storage/ → Cache, logs, dan file sementara
+vendor/ → Dependency Composer
+.env → Konfigurasi environment (database, app key, dll)
+
+Rincian Tugas
+🔹 Tugas 2 — Pengenalan Laravel
+
+Memahami struktur folder Laravel.
+
+Membuat route dan controller sederhana.
+
+Menampilkan data dari controller ke view.
+
+Implementasi dasar Blade Template.
+
+🔹 Tugas 3 — Database Migration & Seeder
+
+Membuat migration untuk struktur tabel.
+
+Menggunakan model untuk interaksi database.
+
+Menambahkan data awal (seeder).
+
+Menjalankan perintah migrate dan seed untuk inisialisasi data.
+
+Membuat tampilan sederhana untuk menampilkan data.

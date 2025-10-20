@@ -1,6 +1,6 @@
 #  Tugas 2 & 3 Laravel — Fremwork Laravel
 
-Proyek ini merupakan hasil pengerjaan **Tugas 2 dan Tugas 3** mata kuliah **Pemrograman Web Lanjut**, menggunakan **Laravel Framework** sebagai backend utama.  
+Proyek ini merupakan hasil pengerjaan **Tugas 2,3 dan Tugas 4 mata kuliah Fremwork Laravel, menggunakan aravel Framework sebagai backend utama.  
 Tujuan dari proyek ini adalah untuk memahami dasar pengembangan aplikasi berbasis **MVC (Model-View-Controller)**, penerapan **routing**, serta implementasi **database migration dan seeding** di Laravel.
 
 ---
@@ -49,3 +49,19 @@ Menambahkan data awal (seeder).
 Menjalankan perintah migrate dan seed untuk inisialisasi data.
 
 Membuat tampilan sederhana untuk menampilkan data.
+
+Tugas 4 — REST API dengan Laravel
+
+Membuat model dan controller untuk resource (misalnya: Book dan Author).
+
+Menambahkan endpoint API menggunakan routes/api.php.
+
+Mengimplementasikan method index() untuk menampilkan semua data.
+
+Mengimplementasikan method store() untuk menambah data baru dengan validasi.
+
+Menggunakan Postman untuk menguji endpoint GET dan POST.
+
+Mengatur database menggunakan SQLite agar mudah dijalankan tanpa konfigurasi server tambahan.
+
+Menjalankan perintah php artisan serve dan memastikan API dapat diakses melalui

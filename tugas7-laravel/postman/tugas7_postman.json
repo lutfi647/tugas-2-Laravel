@@ -1,0 +1,135 @@
+{
+  "info": {
+    "name": "Tugas7 Laravel - Mahasiswa",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register (student)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\n  \\\"name\\\": \\\"New Student\\\",\\n  \\\"email\\\": \\\"newstudent@example.com\\\",\\n  \\\"password\\\": \\\"password\\\",\\n  \\\"role\\\": \\\"mahasiswa\\\"\\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/register",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "register"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Login (student)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\n  \\\"email\\\": \\\"student@example.com\\\",\\n  \\\"password\\\": \\\"password\\\"\\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/login",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "login"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Mahasiswa (auth)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\n  \\\"nama\\\": \\\"Andi\\\",\\n  \\\"nim\\\": \\\"2021003\\\",\\n  \\\"jurusan\\\": \\\"Teknik\\\",\\n  \\\"angkatan\\\": 2021\\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/mahasiswa",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "mahasiswa"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get all Mahasiswa (admin)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token_admin}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/mahasiswa",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "mahasiswa"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Mahasiswa (admin)",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token_admin}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/mahasiswa/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "mahasiswa",
+            "1"
+          ]
+        }
+      }
+    }
+  ]
+}
